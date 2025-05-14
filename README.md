@@ -1,38 +1,55 @@
-# furnireality
-🪑 Furnireality: AR/VR Marketing Experience
-📌 Overview
-Furnireality is an immersive AR/VR solution designed to enhance online furniture marketing by allowing users to visualize products in 3D and real-world environments before purchase.
+# FurniReality
 
-💻 Tech Stack
-Frontend: Angular 15+, TypeScript, HTML5, SCSS
+Furnireality is web application that allows users to view 3D models in an Augmented Reality scene.
 
-AR/VR: WebXR, Three.js, A-Frame
+## Features
 
-Version Control: Git, GitHub
+The application consists of simple functionalities such as:
+  1. List of items.
+  2. Sorting.
+  3. View single item details.
+  4. Navigate to a PlayCanvas application.
 
-Build & Tools: Angular CLI, Webpack, VS Code
+The PlayCanvas application takes input model properties such as name, position and scale and dynamically renders the model entity in 3D view. With a button click users can switch to view the rendered model in AR scene - using a camera to immerse and interact with the models in the our surroundings.
+The application consits of the following features:
+  1. Extract input parameters from the URL query string; input data includes: model name, 3D vector position, rotation and scale values, and a lists of colors. 
+  2.  Load 3D model in the AR scene.
+  3. Position, rotate, and scale model appropriately.
+  4. Change color and textures of rendered models.
 
-🚀 Features
-Interactive 3D furniture placement using AR
+The PlayCanvas source code can be found at [FurniReality PlayCanvas Application.](https://playcanvas.com/project/1151377/overview/furnireality)
 
-VR showroom experience with product navigation
+## Resources
 
-Seamless integration with product catalog APIs
+The 3D models are downloaded from [cgtrader](https://www.cgtrader.com/) for educational purposes only.
 
-Responsive UI optimized for mobile and desktop
+## Available Scripts
 
-🛠️ Setup Instructions
-Clone the repository
-git clone https://github.com/your-username/furnireality.git
+In the project directory, you can run:
 
-Navigate to the project folder
-cd furnireality
+### `npm start`
 
-Install dependencies
-npm install
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Run the app locally
-ng serve
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-✅ Version Control
-Used Git for managing codebase, feature branching, and team collaboration. Maintained clean commit history and followed pull request reviews for quality assurance.
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Deployment
+
+The application is deployed to an AWS EC2 Instance that is currently not running. 
